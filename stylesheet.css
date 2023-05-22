@@ -1,0 +1,171 @@
+body {
+  /* overflow-x: hidden; */
+  font-family: 'Sriracha', cursive;
+  margin: 0;
+}
+
+.main-container {
+  display: grid;
+  background-image: url('https://static.guiainfantil.com/pictures/galerias/7435-peliculas-para-ninos-de-superheroes.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.welcome-container {
+  display: grid;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  align-self: center;
+  justify-self: center;
+  text-align: center;
+}
+
+.welcome-container p {
+  font-size: 65px;
+  color: bisque;
+}
+
+.welcome {
+  color: rgb(255, 5, 255);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.more-info-cont {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  color: bisque;
+  padding: 1rem;
+}
+.more-info-cont p {
+  text-align: center;
+  font-size: 35px;
+}
+
+.btn-container {
+  grid-row: 3/4;
+  align-self: center;
+}
+
+.linkTo-yes {
+  grid-column: 1/2;
+  text-align: center;
+}
+
+.linkTo-no {
+  grid-column: 2/3;
+  justify-self: center;
+}
+
+.answ-yes {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: rgb(50, 0, 107);
+  color: pink;
+  text-decoration: none;
+  border-radius: 0.25em;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.answ-no {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: rgb(50, 0, 107);
+  color: pink;
+  text-decoration: none;
+  border-radius: 0.25em;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.far {
+    font-size: 20px;
+}
+
+
+/* answer no */
+
+.not-main-container{
+    background: url('https://dp4g669tqdae4.cloudfront.net/content/uploads/2020/04/Little-sad-girl-pensive-looking-through-the-window-glass-with-a-lot-of-raindrops.-Sadness-childhood-concept-image.-1170879651_1258x839.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.not-container{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.not-info{
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: center;
+}
+.not-info p{
+    font-size: 45px;
+    color: bisque;
+
+}
+
+.not-more-info{
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    padding: 15px;
+}
+.not-more-info p{
+    font-size: 45px;
+    color: bisque;
+}
+
+
+.not-btn-cont{
+    grid-row: 3/4;
+    justify-self: center;
+}
+
+/* fixing some medias for mobile */
+@media screen and (max-width: 400px){
+  .welcome{
+    font-size: 15px;
+  }
+  .welcome-container p{
+    font-size: 35px;
+  }
+
+  .more-info-cont p{
+    font-size: 17px;
+  }
+
+  .not-info p{
+    font-size: 25px;
+  }
+
+  .not-more-info p {
+    font-size: 25px;
+  }
+
+}
